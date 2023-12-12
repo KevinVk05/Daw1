@@ -10,10 +10,22 @@ public class Triangulo {
 			int ladoc1=in.nextInt();
 			System.out.println("Intro lado 2");
 			int ladoc2=in.nextInt();
-			System.out.println(calcularArea(ladoc1, ladoc2));
+			double area=calcularArea(ladoc1, ladoc2);
+			System.out.println(area);
+			System.out.println("Introduce radio");
+			int radio=in.nextInt();
+			System.out.println(calcularAreaCilindro(radio));
 		}
 		public static double calcularArea(int lado1, int lado2) {
 			return (lado1*lado2)/2;
 			
 		}
-}
+		public static double calcularAreaCilindro(int radio) {
+			return (2*pi*radio)+(2*pi*(radio*radio));
+		}
+		
+
+	}
+
+
+
