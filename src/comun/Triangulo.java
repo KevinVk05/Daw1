@@ -15,6 +15,10 @@ public class Triangulo {
 			System.out.println("Introduce radio");
 			int radio=in.nextInt();
 			System.out.println(calcularAreaCilindro(radio));
+			System.out.println("Intro lado 1");
+			int lado1=in.nextInt();
+			System.out.println(calcularVolumenCubo(lado1));
+			
 		}
 		public static double calcularArea(int lado1, int lado2) {
 			return (lado1*lado2)/2;
@@ -23,9 +27,11 @@ public class Triangulo {
 		public static double calcularAreaCilindro(int radio) {
 			return (2*pi*radio)+(2*pi*(radio*radio));
 		}
+		public static double calcularVolumenCubo(int lado1) {
+			return (lado1*lado1*lado1);
+		}
 		
 
 	}
-
 
 
